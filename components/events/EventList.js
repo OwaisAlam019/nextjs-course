@@ -7,7 +7,7 @@ function EventList({eventList}){
 
             {
             eventList.map((x)=>{
-                return <EventItem eventItem ={x}/>
+                return <EventItem key={x.id} eventItem ={x}/>
          })}
         </ul>
     )
